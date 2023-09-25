@@ -23,7 +23,7 @@ let proxy = parseProxyString('http://username:password@127.0.0.1:8080');
 console.log(proxy);
 ```
 
-#### Result:
+#### Результат:
 ```javascript
 {
     protocol: 'http',
@@ -49,7 +49,7 @@ let proxy = parseProxyString('http|127.0.0.1:8080|username:password', {
 console.log(proxy);
 ```
 
-#### Result:
+#### Результат:
 ```javascript
 {
     protocol: "http",
