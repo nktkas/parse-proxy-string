@@ -1,7 +1,7 @@
 {
   "name": "parse-proxy-string",
   "version": "1.0.0",
-  "description": "Parses proxy string of different formats",
+  "description": "A library for analyzing a proxy string into an object",
   "main": "index.js",
   "scripts": {
     "test": "jest"
