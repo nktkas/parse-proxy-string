@@ -1,0 +1,22 @@
+{
+  "name": "parse-proxy-string",
+  "version": "1.0.0",
+  "description": "Parses proxy string of different formats",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nktkas/parse-proxy-string.git"
+  },
+  "author": "nktkas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nktkas/parse-proxy-string/issues"
+  },
+  "homepage": "https://github.com/nktkas/parse-proxy-string#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
