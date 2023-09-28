@@ -7,7 +7,7 @@ describe('null', () => {
                 expect(parseProxyString('127.0.0.1:8080')).toEqual({
                     protocol: null,
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -20,7 +20,7 @@ describe('null', () => {
                 expect(parseProxyString('localhost:8080')).toEqual({
                     protocol: null,
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -33,7 +33,7 @@ describe('null', () => {
                 expect(parseProxyString('example.com:8080')).toEqual({
                     protocol: null,
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -46,7 +46,7 @@ describe('null', () => {
                 expect(parseProxyString('proxy.example.com:8080')).toEqual({
                     protocol: null,
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -62,7 +62,7 @@ describe('null', () => {
                 expect(parseProxyString('127.0.0.1:8080@username:password')).toEqual({
                     protocol: null,
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -73,7 +73,7 @@ describe('null', () => {
                 expect(parseProxyString('127.0.0.1:8080:username:password')).toEqual({
                     protocol: null,
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -84,7 +84,7 @@ describe('null', () => {
                 expect(parseProxyString('username:password@127.0.0.1:8080')).toEqual({
                     protocol: null,
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -95,7 +95,7 @@ describe('null', () => {
                 expect(parseProxyString('username:password:127.0.0.1:8080')).toEqual({
                     protocol: null,
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -108,7 +108,7 @@ describe('null', () => {
                 expect(parseProxyString('localhost:8080@username:password')).toEqual({
                     protocol: null,
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -119,7 +119,7 @@ describe('null', () => {
                 expect(parseProxyString('localhost:8080:username:password')).toEqual({
                     protocol: null,
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -130,7 +130,7 @@ describe('null', () => {
                 expect(parseProxyString('username:password@localhost:8080')).toEqual({
                     protocol: null,
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -141,7 +141,7 @@ describe('null', () => {
                 expect(parseProxyString('username:password:localhost:8080')).toEqual({
                     protocol: null,
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -154,7 +154,7 @@ describe('null', () => {
                 expect(parseProxyString('example.com:8080@username:password')).toEqual({
                     protocol: null,
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -165,7 +165,7 @@ describe('null', () => {
                 expect(parseProxyString('example.com:8080:username:password')).toEqual({
                     protocol: null,
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -176,7 +176,7 @@ describe('null', () => {
                 expect(parseProxyString('username:password@example.com:8080')).toEqual({
                     protocol: null,
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -187,7 +187,7 @@ describe('null', () => {
                 expect(parseProxyString('username:password:example.com:8080')).toEqual({
                     protocol: null,
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -200,7 +200,7 @@ describe('null', () => {
                 expect(parseProxyString('proxy.example.com:8080@username:password')).toEqual({
                     protocol: null,
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -211,7 +211,7 @@ describe('null', () => {
                 expect(parseProxyString('proxy.example.com:8080:username:password')).toEqual({
                     protocol: null,
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -222,7 +222,7 @@ describe('null', () => {
                 expect(parseProxyString('username:password@proxy.example.com:8080')).toEqual({
                     protocol: null,
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -233,7 +233,7 @@ describe('null', () => {
                 expect(parseProxyString('username:password:proxy.example.com:8080')).toEqual({
                     protocol: null,
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -251,7 +251,7 @@ describe('http', () => {
                 expect(parseProxyString('http://127.0.0.1:8080')).toEqual({
                     protocol: 'http',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -262,7 +262,7 @@ describe('http', () => {
                 expect(parseProxyString('http:127.0.0.1:8080')).toEqual({
                     protocol: 'http',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -275,7 +275,7 @@ describe('http', () => {
                 expect(parseProxyString('http://localhost:8080')).toEqual({
                     protocol: 'http',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -286,7 +286,7 @@ describe('http', () => {
                 expect(parseProxyString('http:localhost:8080')).toEqual({
                     protocol: 'http',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -299,7 +299,7 @@ describe('http', () => {
                 expect(parseProxyString('http://example.com:8080')).toEqual({
                     protocol: 'http',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -310,7 +310,7 @@ describe('http', () => {
                 expect(parseProxyString('http:example.com:8080')).toEqual({
                     protocol: 'http',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -323,7 +323,7 @@ describe('http', () => {
                 expect(parseProxyString('http://proxy.example.com:8080')).toEqual({
                     protocol: 'http',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -334,7 +334,7 @@ describe('http', () => {
                 expect(parseProxyString('http:proxy.example.com:8080')).toEqual({
                     protocol: 'http',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -350,7 +350,7 @@ describe('http', () => {
                 expect(parseProxyString('http://127.0.0.1:8080@username:password')).toEqual({
                     protocol: 'http',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -361,7 +361,7 @@ describe('http', () => {
                 expect(parseProxyString('http://127.0.0.1:8080:username:password')).toEqual({
                     protocol: 'http',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -372,7 +372,7 @@ describe('http', () => {
                 expect(parseProxyString('http:127.0.0.1:8080@username:password')).toEqual({
                     protocol: 'http',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -383,7 +383,7 @@ describe('http', () => {
                 expect(parseProxyString('http:127.0.0.1:8080:username:password')).toEqual({
                     protocol: 'http',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -394,7 +394,7 @@ describe('http', () => {
                 expect(parseProxyString('http://username:password@127.0.0.1:8080')).toEqual({
                     protocol: 'http',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -405,7 +405,7 @@ describe('http', () => {
                 expect(parseProxyString('http://username:password:127.0.0.1:8080')).toEqual({
                     protocol: 'http',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -416,7 +416,7 @@ describe('http', () => {
                 expect(parseProxyString('http:username:password@127.0.0.1:8080')).toEqual({
                     protocol: 'http',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -427,7 +427,7 @@ describe('http', () => {
                 expect(parseProxyString('http:username:password:127.0.0.1:8080')).toEqual({
                     protocol: 'http',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -440,7 +440,7 @@ describe('http', () => {
                 expect(parseProxyString('http://localhost:8080@username:password')).toEqual({
                     protocol: 'http',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -451,7 +451,7 @@ describe('http', () => {
                 expect(parseProxyString('http://localhost:8080:username:password')).toEqual({
                     protocol: 'http',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -462,7 +462,7 @@ describe('http', () => {
                 expect(parseProxyString('http:localhost:8080@username:password')).toEqual({
                     protocol: 'http',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -473,7 +473,7 @@ describe('http', () => {
                 expect(parseProxyString('http:localhost:8080:username:password')).toEqual({
                     protocol: 'http',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -484,7 +484,7 @@ describe('http', () => {
                 expect(parseProxyString('http://username:password@localhost:8080')).toEqual({
                     protocol: 'http',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -495,7 +495,7 @@ describe('http', () => {
                 expect(parseProxyString('http://username:password:localhost:8080')).toEqual({
                     protocol: 'http',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -506,7 +506,7 @@ describe('http', () => {
                 expect(parseProxyString('http:username:password@localhost:8080')).toEqual({
                     protocol: 'http',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -517,7 +517,7 @@ describe('http', () => {
                 expect(parseProxyString('http:username:password:localhost:8080')).toEqual({
                     protocol: 'http',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -530,7 +530,7 @@ describe('http', () => {
                 expect(parseProxyString('http://example.com:8080@username:password')).toEqual({
                     protocol: 'http',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -541,7 +541,7 @@ describe('http', () => {
                 expect(parseProxyString('http://example.com:8080:username:password')).toEqual({
                     protocol: 'http',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -552,7 +552,7 @@ describe('http', () => {
                 expect(parseProxyString('http:example.com:8080@username:password')).toEqual({
                     protocol: 'http',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -563,7 +563,7 @@ describe('http', () => {
                 expect(parseProxyString('http:example.com:8080:username:password')).toEqual({
                     protocol: 'http',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -574,7 +574,7 @@ describe('http', () => {
                 expect(parseProxyString('http://username:password@example.com:8080')).toEqual({
                     protocol: 'http',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -585,7 +585,7 @@ describe('http', () => {
                 expect(parseProxyString('http://username:password:example.com:8080')).toEqual({
                     protocol: 'http',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -596,7 +596,7 @@ describe('http', () => {
                 expect(parseProxyString('http:username:password@example.com:8080')).toEqual({
                     protocol: 'http',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -607,7 +607,7 @@ describe('http', () => {
                 expect(parseProxyString('http:username:password:example.com:8080')).toEqual({
                     protocol: 'http',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -620,7 +620,7 @@ describe('http', () => {
                 expect(parseProxyString('http://proxy.example.com:8080@username:password')).toEqual({
                     protocol: 'http',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -631,7 +631,7 @@ describe('http', () => {
                 expect(parseProxyString('http://proxy.example.com:8080:username:password')).toEqual({
                     protocol: 'http',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -642,7 +642,7 @@ describe('http', () => {
                 expect(parseProxyString('http:proxy.example.com:8080@username:password')).toEqual({
                     protocol: 'http',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -653,7 +653,7 @@ describe('http', () => {
                 expect(parseProxyString('http:proxy.example.com:8080:username:password')).toEqual({
                     protocol: 'http',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -664,7 +664,7 @@ describe('http', () => {
                 expect(parseProxyString('http://username:password@proxy.example.com:8080')).toEqual({
                     protocol: 'http',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -675,7 +675,7 @@ describe('http', () => {
                 expect(parseProxyString('http://username:password:proxy.example.com:8080')).toEqual({
                     protocol: 'http',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -686,7 +686,7 @@ describe('http', () => {
                 expect(parseProxyString('http:username:password@proxy.example.com:8080')).toEqual({
                     protocol: 'http',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -697,7 +697,7 @@ describe('http', () => {
                 expect(parseProxyString('http:username:password:proxy.example.com:8080')).toEqual({
                     protocol: 'http',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -715,7 +715,7 @@ describe('https', () => {
                 expect(parseProxyString('https://127.0.0.1:8080')).toEqual({
                     protocol: 'https',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -726,7 +726,7 @@ describe('https', () => {
                 expect(parseProxyString('https:127.0.0.1:8080')).toEqual({
                     protocol: 'https',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -739,7 +739,7 @@ describe('https', () => {
                 expect(parseProxyString('https://localhost:8080')).toEqual({
                     protocol: 'https',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -750,7 +750,7 @@ describe('https', () => {
                 expect(parseProxyString('https:localhost:8080')).toEqual({
                     protocol: 'https',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -763,7 +763,7 @@ describe('https', () => {
                 expect(parseProxyString('https://example.com:8080')).toEqual({
                     protocol: 'https',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -774,7 +774,7 @@ describe('https', () => {
                 expect(parseProxyString('https:example.com:8080')).toEqual({
                     protocol: 'https',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -787,7 +787,7 @@ describe('https', () => {
                 expect(parseProxyString('https://proxy.example.com:8080')).toEqual({
                     protocol: 'https',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -798,7 +798,7 @@ describe('https', () => {
                 expect(parseProxyString('https:proxy.example.com:8080')).toEqual({
                     protocol: 'https',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -814,7 +814,7 @@ describe('https', () => {
                 expect(parseProxyString('https://127.0.0.1:8080@username:password')).toEqual({
                     protocol: 'https',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -825,7 +825,7 @@ describe('https', () => {
                 expect(parseProxyString('https://127.0.0.1:8080:username:password')).toEqual({
                     protocol: 'https',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -836,7 +836,7 @@ describe('https', () => {
                 expect(parseProxyString('https:127.0.0.1:8080@username:password')).toEqual({
                     protocol: 'https',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -847,7 +847,7 @@ describe('https', () => {
                 expect(parseProxyString('https:127.0.0.1:8080:username:password')).toEqual({
                     protocol: 'https',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -858,7 +858,7 @@ describe('https', () => {
                 expect(parseProxyString('https://username:password@127.0.0.1:8080')).toEqual({
                     protocol: 'https',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -869,7 +869,7 @@ describe('https', () => {
                 expect(parseProxyString('https://username:password:127.0.0.1:8080')).toEqual({
                     protocol: 'https',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -880,7 +880,7 @@ describe('https', () => {
                 expect(parseProxyString('https:username:password@127.0.0.1:8080')).toEqual({
                     protocol: 'https',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -891,7 +891,7 @@ describe('https', () => {
                 expect(parseProxyString('https:username:password:127.0.0.1:8080')).toEqual({
                     protocol: 'https',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -904,7 +904,7 @@ describe('https', () => {
                 expect(parseProxyString('https://localhost:8080@username:password')).toEqual({
                     protocol: 'https',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -915,7 +915,7 @@ describe('https', () => {
                 expect(parseProxyString('https://localhost:8080:username:password')).toEqual({
                     protocol: 'https',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -926,7 +926,7 @@ describe('https', () => {
                 expect(parseProxyString('https:localhost:8080@username:password')).toEqual({
                     protocol: 'https',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -937,7 +937,7 @@ describe('https', () => {
                 expect(parseProxyString('https:localhost:8080:username:password')).toEqual({
                     protocol: 'https',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -948,7 +948,7 @@ describe('https', () => {
                 expect(parseProxyString('https://username:password@localhost:8080')).toEqual({
                     protocol: 'https',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -959,7 +959,7 @@ describe('https', () => {
                 expect(parseProxyString('https://username:password:localhost:8080')).toEqual({
                     protocol: 'https',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -970,7 +970,7 @@ describe('https', () => {
                 expect(parseProxyString('https:username:password@localhost:8080')).toEqual({
                     protocol: 'https',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -981,7 +981,7 @@ describe('https', () => {
                 expect(parseProxyString('https:username:password:localhost:8080')).toEqual({
                     protocol: 'https',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -994,7 +994,7 @@ describe('https', () => {
                 expect(parseProxyString('https://example.com:8080@username:password')).toEqual({
                     protocol: 'https',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1005,7 +1005,7 @@ describe('https', () => {
                 expect(parseProxyString('https://example.com:8080:username:password')).toEqual({
                     protocol: 'https',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1016,7 +1016,7 @@ describe('https', () => {
                 expect(parseProxyString('https:example.com:8080@username:password')).toEqual({
                     protocol: 'https',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1027,7 +1027,7 @@ describe('https', () => {
                 expect(parseProxyString('https:example.com:8080:username:password')).toEqual({
                     protocol: 'https',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1038,7 +1038,7 @@ describe('https', () => {
                 expect(parseProxyString('https://username:password@example.com:8080')).toEqual({
                     protocol: 'https',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1049,7 +1049,7 @@ describe('https', () => {
                 expect(parseProxyString('https://username:password:example.com:8080')).toEqual({
                     protocol: 'https',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1060,7 +1060,7 @@ describe('https', () => {
                 expect(parseProxyString('https:username:password@example.com:8080')).toEqual({
                     protocol: 'https',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1071,7 +1071,7 @@ describe('https', () => {
                 expect(parseProxyString('https:username:password:example.com:8080')).toEqual({
                     protocol: 'https',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1084,7 +1084,7 @@ describe('https', () => {
                 expect(parseProxyString('https://proxy.example.com:8080@username:password')).toEqual({
                     protocol: 'https',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1095,7 +1095,7 @@ describe('https', () => {
                 expect(parseProxyString('https://proxy.example.com:8080:username:password')).toEqual({
                     protocol: 'https',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1106,7 +1106,7 @@ describe('https', () => {
                 expect(parseProxyString('https:proxy.example.com:8080@username:password')).toEqual({
                     protocol: 'https',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1117,7 +1117,7 @@ describe('https', () => {
                 expect(parseProxyString('https:proxy.example.com:8080:username:password')).toEqual({
                     protocol: 'https',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1128,7 +1128,7 @@ describe('https', () => {
                 expect(parseProxyString('https://username:password@proxy.example.com:8080')).toEqual({
                     protocol: 'https',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1139,7 +1139,7 @@ describe('https', () => {
                 expect(parseProxyString('https://username:password:proxy.example.com:8080')).toEqual({
                     protocol: 'https',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1150,7 +1150,7 @@ describe('https', () => {
                 expect(parseProxyString('https:username:password@proxy.example.com:8080')).toEqual({
                     protocol: 'https',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1161,7 +1161,7 @@ describe('https', () => {
                 expect(parseProxyString('https:username:password:proxy.example.com:8080')).toEqual({
                     protocol: 'https',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1179,7 +1179,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://127.0.0.1:8080')).toEqual({
                     protocol: 'socks',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1190,7 +1190,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:127.0.0.1:8080')).toEqual({
                     protocol: 'socks',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1203,7 +1203,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://localhost:8080')).toEqual({
                     protocol: 'socks',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1214,7 +1214,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:localhost:8080')).toEqual({
                     protocol: 'socks',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1227,7 +1227,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://example.com:8080')).toEqual({
                     protocol: 'socks',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1238,7 +1238,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:example.com:8080')).toEqual({
                     protocol: 'socks',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1251,7 +1251,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://proxy.example.com:8080')).toEqual({
                     protocol: 'socks',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1262,7 +1262,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:proxy.example.com:8080')).toEqual({
                     protocol: 'socks',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1278,7 +1278,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://127.0.0.1:8080@username:password')).toEqual({
                     protocol: 'socks',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1289,7 +1289,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://127.0.0.1:8080:username:password')).toEqual({
                     protocol: 'socks',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1300,7 +1300,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:127.0.0.1:8080@username:password')).toEqual({
                     protocol: 'socks',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1311,7 +1311,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:127.0.0.1:8080:username:password')).toEqual({
                     protocol: 'socks',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1322,7 +1322,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://username:password@127.0.0.1:8080')).toEqual({
                     protocol: 'socks',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1333,7 +1333,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://username:password:127.0.0.1:8080')).toEqual({
                     protocol: 'socks',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1344,7 +1344,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:username:password@127.0.0.1:8080')).toEqual({
                     protocol: 'socks',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1355,7 +1355,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:username:password:127.0.0.1:8080')).toEqual({
                     protocol: 'socks',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1368,7 +1368,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://localhost:8080@username:password')).toEqual({
                     protocol: 'socks',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1379,7 +1379,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://localhost:8080:username:password')).toEqual({
                     protocol: 'socks',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1390,7 +1390,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:localhost:8080@username:password')).toEqual({
                     protocol: 'socks',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1401,7 +1401,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:localhost:8080:username:password')).toEqual({
                     protocol: 'socks',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1412,7 +1412,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://username:password@localhost:8080')).toEqual({
                     protocol: 'socks',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1423,7 +1423,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://username:password:localhost:8080')).toEqual({
                     protocol: 'socks',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1434,7 +1434,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:username:password@localhost:8080')).toEqual({
                     protocol: 'socks',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1445,7 +1445,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:username:password:localhost:8080')).toEqual({
                     protocol: 'socks',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1458,7 +1458,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://example.com:8080@username:password')).toEqual({
                     protocol: 'socks',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1469,7 +1469,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://example.com:8080:username:password')).toEqual({
                     protocol: 'socks',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1480,7 +1480,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:example.com:8080@username:password')).toEqual({
                     protocol: 'socks',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1491,7 +1491,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:example.com:8080:username:password')).toEqual({
                     protocol: 'socks',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1502,7 +1502,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://username:password@example.com:8080')).toEqual({
                     protocol: 'socks',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1513,7 +1513,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://username:password:example.com:8080')).toEqual({
                     protocol: 'socks',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1524,7 +1524,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:username:password@example.com:8080')).toEqual({
                     protocol: 'socks',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1535,7 +1535,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:username:password:example.com:8080')).toEqual({
                     protocol: 'socks',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1548,7 +1548,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://proxy.example.com:8080@username:password')).toEqual({
                     protocol: 'socks',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1559,7 +1559,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://proxy.example.com:8080:username:password')).toEqual({
                     protocol: 'socks',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1570,7 +1570,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:proxy.example.com:8080@username:password')).toEqual({
                     protocol: 'socks',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1581,7 +1581,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:proxy.example.com:8080:username:password')).toEqual({
                     protocol: 'socks',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1592,7 +1592,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://username:password@proxy.example.com:8080')).toEqual({
                     protocol: 'socks',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1603,7 +1603,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks://username:password:proxy.example.com:8080')).toEqual({
                     protocol: 'socks',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1614,7 +1614,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:username:password@proxy.example.com:8080')).toEqual({
                     protocol: 'socks',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1625,7 +1625,7 @@ describe('socks', () => {
                 expect(parseProxyString('socks:username:password:proxy.example.com:8080')).toEqual({
                     protocol: 'socks',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1643,7 +1643,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://127.0.0.1:8080')).toEqual({
                     protocol: 'socks4',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1654,7 +1654,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:127.0.0.1:8080')).toEqual({
                     protocol: 'socks4',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1667,7 +1667,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://localhost:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1678,7 +1678,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:localhost:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1691,7 +1691,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://example.com:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1702,7 +1702,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:example.com:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1715,7 +1715,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://proxy.example.com:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1726,7 +1726,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:proxy.example.com:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -1742,7 +1742,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://127.0.0.1:8080@username:password')).toEqual({
                     protocol: 'socks4',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1753,7 +1753,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://127.0.0.1:8080:username:password')).toEqual({
                     protocol: 'socks4',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1764,7 +1764,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:127.0.0.1:8080@username:password')).toEqual({
                     protocol: 'socks4',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1775,7 +1775,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:127.0.0.1:8080:username:password')).toEqual({
                     protocol: 'socks4',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1786,7 +1786,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://username:password@127.0.0.1:8080')).toEqual({
                     protocol: 'socks4',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1797,7 +1797,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://username:password:127.0.0.1:8080')).toEqual({
                     protocol: 'socks4',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1808,7 +1808,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:username:password@127.0.0.1:8080')).toEqual({
                     protocol: 'socks4',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1819,7 +1819,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:username:password:127.0.0.1:8080')).toEqual({
                     protocol: 'socks4',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1832,7 +1832,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://localhost:8080@username:password')).toEqual({
                     protocol: 'socks4',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1843,7 +1843,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://localhost:8080:username:password')).toEqual({
                     protocol: 'socks4',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1854,7 +1854,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:localhost:8080@username:password')).toEqual({
                     protocol: 'socks4',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1865,7 +1865,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:localhost:8080:username:password')).toEqual({
                     protocol: 'socks4',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1876,7 +1876,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://username:password@localhost:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1887,7 +1887,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://username:password:localhost:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1898,7 +1898,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:username:password@localhost:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1909,7 +1909,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:username:password:localhost:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1922,7 +1922,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://example.com:8080@username:password')).toEqual({
                     protocol: 'socks4',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1933,7 +1933,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://example.com:8080:username:password')).toEqual({
                     protocol: 'socks4',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1944,7 +1944,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:example.com:8080@username:password')).toEqual({
                     protocol: 'socks4',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1955,7 +1955,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:example.com:8080:username:password')).toEqual({
                     protocol: 'socks4',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1966,7 +1966,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://username:password@example.com:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1977,7 +1977,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://username:password:example.com:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1988,7 +1988,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:username:password@example.com:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -1999,7 +1999,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:username:password:example.com:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2012,7 +2012,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://proxy.example.com:8080@username:password')).toEqual({
                     protocol: 'socks4',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2023,7 +2023,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://proxy.example.com:8080:username:password')).toEqual({
                     protocol: 'socks4',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2034,7 +2034,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:proxy.example.com:8080@username:password')).toEqual({
                     protocol: 'socks4',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2045,7 +2045,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:proxy.example.com:8080:username:password')).toEqual({
                     protocol: 'socks4',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2056,7 +2056,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://username:password@proxy.example.com:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2067,7 +2067,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4://username:password:proxy.example.com:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2078,7 +2078,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:username:password@proxy.example.com:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2089,7 +2089,7 @@ describe('socks4', () => {
                 expect(parseProxyString('socks4:username:password:proxy.example.com:8080')).toEqual({
                     protocol: 'socks4',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2107,7 +2107,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://127.0.0.1:8080')).toEqual({
                     protocol: 'socks5',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -2118,7 +2118,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:127.0.0.1:8080')).toEqual({
                     protocol: 'socks5',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -2131,7 +2131,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://localhost:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -2142,7 +2142,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:localhost:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -2155,7 +2155,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://example.com:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -2166,7 +2166,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:example.com:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -2179,7 +2179,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://proxy.example.com:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -2190,7 +2190,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:proxy.example.com:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: null,
                         password: null
@@ -2206,7 +2206,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://127.0.0.1:8080@username:password')).toEqual({
                     protocol: 'socks5',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2217,7 +2217,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://127.0.0.1:8080:username:password')).toEqual({
                     protocol: 'socks5',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2228,7 +2228,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:127.0.0.1:8080@username:password')).toEqual({
                     protocol: 'socks5',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2239,7 +2239,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:127.0.0.1:8080:username:password')).toEqual({
                     protocol: 'socks5',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2251,7 +2251,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://username:password@127.0.0.1:8080')).toEqual({
                     protocol: 'socks5',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2262,7 +2262,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://username:password:127.0.0.1:8080')).toEqual({
                     protocol: 'socks5',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2273,7 +2273,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:username:password@127.0.0.1:8080')).toEqual({
                     protocol: 'socks5',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2284,7 +2284,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:username:password:127.0.0.1:8080')).toEqual({
                     protocol: 'socks5',
                     host: '127.0.0.1',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2297,7 +2297,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://localhost:8080@username:password')).toEqual({
                     protocol: 'socks5',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2308,7 +2308,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://localhost:8080:username:password')).toEqual({
                     protocol: 'socks5',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2319,7 +2319,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:localhost:8080@username:password')).toEqual({
                     protocol: 'socks5',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2330,7 +2330,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:localhost:8080:username:password')).toEqual({
                     protocol: 'socks5',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2341,7 +2341,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://username:password@localhost:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2352,7 +2352,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://username:password:localhost:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2363,7 +2363,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:username:password@localhost:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2374,7 +2374,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:username:password:localhost:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'localhost',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2387,7 +2387,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://example.com:8080@username:password')).toEqual({
                     protocol: 'socks5',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2398,7 +2398,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://example.com:8080:username:password')).toEqual({
                     protocol: 'socks5',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2409,7 +2409,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:example.com:8080@username:password')).toEqual({
                     protocol: 'socks5',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2420,7 +2420,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:example.com:8080:username:password')).toEqual({
                     protocol: 'socks5',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2431,7 +2431,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://username:password@example.com:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2442,7 +2442,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://username:password:example.com:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2453,7 +2453,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:username:password@example.com:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2464,7 +2464,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:username:password:example.com:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2477,7 +2477,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://proxy.example.com:8080@username:password')).toEqual({
                     protocol: 'socks5',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2488,7 +2488,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://proxy.example.com:8080:username:password')).toEqual({
                     protocol: 'socks5',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2499,7 +2499,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:proxy.example.com:8080@username:password')).toEqual({
                     protocol: 'socks5',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2510,7 +2510,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:proxy.example.com:8080:username:password')).toEqual({
                     protocol: 'socks5',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2521,7 +2521,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://username:password@proxy.example.com:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2532,7 +2532,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5://username:password:proxy.example.com:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2543,7 +2543,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:username:password@proxy.example.com:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'
@@ -2554,7 +2554,7 @@ describe('socks5', () => {
                 expect(parseProxyString('socks5:username:password:proxy.example.com:8080')).toEqual({
                     protocol: 'socks5',
                     host: 'proxy.example.com',
-                    port: '8080',
+                    port: 8080,
                     auth: {
                         username: 'username',
                         password: 'password'

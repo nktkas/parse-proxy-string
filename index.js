@@ -20,7 +20,7 @@
  * //Logs: {
  * //  protocol: 'http',
  * //  host: '127.0.0.1',
- * //  port: '8080',
+ * //  port: 8080,
  * //  auth: {
  * //    username: 'username',
  * //    password: 'password'
@@ -95,7 +95,7 @@ function parseProxyString(proxy, options) {
     if (parsedProxy) return {
         protocol: null,
         host: parsedProxy[1],
-        port: parsedProxy[2],
+        port: Number(parsedProxy[2]),
         auth: {
             username: null,
             password: null
@@ -128,7 +128,7 @@ function parseProxyString(proxy, options) {
     if (parsedProxy) return {
         protocol: parsedProxy[1],
         host: parsedProxy[2],
-        port: parsedProxy[3],
+        port: Number(parsedProxy[3]),
         auth: {
             username: null,
             password: null
@@ -173,7 +173,7 @@ function parseProxyString(proxy, options) {
     if (parsedProxy) return {
         protocol: parsedProxy[1],
         host: parsedProxy[2],
-        port: parsedProxy[3],
+        port: Number(parsedProxy[3]),
         auth: {
             username: parsedProxy[4],
             password: parsedProxy[5]
@@ -218,7 +218,7 @@ function parseProxyString(proxy, options) {
     if (parsedProxy) return {
         protocol: parsedProxy[1],
         host: parsedProxy[4],
-        port: parsedProxy[5],
+        port: Number(parsedProxy[5]),
         auth: {
             username: parsedProxy[2],
             password: parsedProxy[3]
@@ -253,7 +253,7 @@ function parseProxyString(proxy, options) {
     if (parsedProxy) return {
         protocol: null,
         host: parsedProxy[1],
-        port: parsedProxy[2],
+        port: Number(parsedProxy[2]),
         auth: {
             username: parsedProxy[3],
             password: parsedProxy[4]
@@ -288,7 +288,7 @@ function parseProxyString(proxy, options) {
     if (parsedProxy) return {
         protocol: null,
         host: parsedProxy[3],
-        port: parsedProxy[4],
+        port: Number(parsedProxy[4]),
         auth: {
             username: parsedProxy[1],
             password: parsedProxy[2]
